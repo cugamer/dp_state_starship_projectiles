@@ -24,4 +24,13 @@ public class ProjectileLauncher {
 	public void loadLauncher(){
 		currentLauncherState.loadLauncher();
 	}
+	
+	public void unloadLauncher(){
+		currentLauncherState.unloadLauncher();
+	}
+	
+	public void fireLauncher(){
+		currentLauncherState.fireOrder();
+		currentLauncherState.launchProjectile();
+	}
 }

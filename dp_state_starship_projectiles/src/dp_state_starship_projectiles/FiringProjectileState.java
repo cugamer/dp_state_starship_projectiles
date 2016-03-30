@@ -18,7 +18,6 @@ public class FiringProjectileState implements ProjectileLauncherState {
 	public void fireOrder() {
 		System.out.println("Fire order has been recieved but cannot be implemented until "
 				+ "current sequence is completed and new projectile is loaded.");
-
 	}
 
 	public void launchProjectile() {

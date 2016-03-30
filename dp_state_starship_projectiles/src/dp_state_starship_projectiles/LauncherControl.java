@@ -6,6 +6,10 @@ public class LauncherControl {
 		ProjectileLauncher launcher = new ProjectileLauncher();
 		
 		launcher.loadLauncher();
+		launcher.unloadLauncher();
+		launcher.fireLauncher();
+		launcher.loadLauncher();
+		launcher.fireLauncher();
 	}
 
 }

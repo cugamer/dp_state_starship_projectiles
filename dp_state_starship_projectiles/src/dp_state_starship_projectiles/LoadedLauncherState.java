@@ -7,13 +7,13 @@ public class LoadedLauncherState implements ProjectileLauncherState {
 		this.launcher = launcher;
 	}
 	
-	
 	public void loadLauncher() {
 		System.out.println("Launcher is already loaded, unable to load additional projectiles.");
 	}
 
 	public void unloadLauncher() {
 		System.out.println("Launcher is now unloaded.");
+		launcher.setLauncherState(launcher.unloadedLauncher);
 	}
 
 	public void fireOrder() {
@@ -22,5 +22,6 @@ public class LoadedLauncherState implements ProjectileLauncherState {
 
 	public void launchProjectile() {
 		System.out.println("Projectile is currently being fired.");
+		launcher.setLauncherState(launcher.unloadedLauncher);
 	}
 }
