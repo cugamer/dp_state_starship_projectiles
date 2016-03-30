@@ -8,13 +8,12 @@ public class UnloadedLauncherState implements ProjectileLauncherState {
 	}
 
 	public void loadLauncher() {
-		System.out.println("Launcher is now loaded.");
-//		launcher.setState()
+		System.out.println("Loading launcher, launcher is now loaded.");
+		launcher.setLauncherState(launcher.loadedLauncher);
 	}
 
 	public void unloadLauncher() {
 		System.out.println("Unable to unload launcher, no projectile is loaded.");
-
 	}
 
 	public void fireOrder() {
